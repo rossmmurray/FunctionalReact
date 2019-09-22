@@ -5,12 +5,12 @@ const NewAnimal = props => {
     const [newAnimal, setAnimal] = useState('')
 
     return (
-        <div>
+        <div >
             <label>
                 Enter Animal Name:
-                <input name='newAnimal' value={newAnimal} onChange={e => setAnimal(e.currentTarget.value)} />
+                <input autoComplete="off" value={newAnimal} onChange={e => setAnimal(e.currentTarget.value)} />
             </label>
-            <input type='button' value='Add' onClick={props.createAnimal(newAnimal)} />
+            <button onClick={props.createAnimal(newAnimal)}>Add</button>
         </div>
     )
 }
