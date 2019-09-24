@@ -6,7 +6,6 @@ const ShowAnimals = props => {
       {props.animals.map((animal, index) => (
         <li key={index}>
           {animal}
-          {/* pass non-curried function */}
           <button onClick={event => props.deleteAnimal(index, event)}>X</button>
         </li>
       ))}

@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div>
+      {false && Array(1 / 0)}
       <h1>Functional React Example</h1>
       <NewAnimal createAnimal={createAnimal} />
       <ShowAnimals animals={animals} deleteAnimal={deleteAnimal} />
