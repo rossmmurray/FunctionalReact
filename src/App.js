@@ -9,14 +9,18 @@ function App() {
 
   const [animals, setAnimals] = useState(defaultAnimals);
 
-  const createAnimal = animal => _event => {
+  // uses currying
+  const createAnimal = animal => event => {
     setAnimals([...animals, animal]);
+    console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };
 
-  const deleteAnimal = index => _event => {
+  // uses multiple parameters
+  const deleteAnimal = (index, event) => {
     const animalsTemp = [...animals];
     animalsTemp.splice(index, 1);
     setAnimals(animalsTemp);
+    console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };
 
   return (
