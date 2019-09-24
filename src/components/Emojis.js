@@ -8,11 +8,11 @@ const Emojis = props => {
           🐶
         </span>
       )}
-      {props.animals.includes("Cat") && (
+      {props.animals.includes("Cat") ? (
         <span role="img" aria-label="cat">
           😸
         </span>
-      )}
+      ) : null}
     </h1>
   );
 };
