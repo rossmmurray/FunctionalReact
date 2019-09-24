@@ -13,6 +13,7 @@ const NewAnimal = props => {
           onChange={e => setAnimal(e.currentTarget.value)}
         />
       </label>
+      {/* pass curried function */}
       <button onClick={props.createAnimal(newAnimal)}>Add</button>
     </div>
   );
