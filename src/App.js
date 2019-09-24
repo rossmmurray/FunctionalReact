@@ -13,6 +13,12 @@ function App() {
     console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };
 
+  const _ignoreCallCurriedFunctionExample = () => {
+    const someAnimal = "Snake";
+    const someEvent = { clientX: "X", clientY: "Y" };
+    createAnimal(someAnimal)(someEvent);
+  };
+
   // uses multiple parameters
   const deleteAnimal = (index, event) => {
     const animalsTemp = [...animals];
