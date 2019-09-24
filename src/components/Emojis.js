@@ -1,4 +1,5 @@
 import React from "react";
+import { animals } from "../types/all";
 
 const Emojis = props => {
   return (
@@ -15,6 +16,10 @@ const Emojis = props => {
       )}
     </h1>
   );
+};
+
+Emojis.propTypes = {
+  animals: animals
 };
 
 export default Emojis;
