@@ -9,11 +9,11 @@ function App() {
 
   const [animals, setAnimals] = useState(defaultAnimals);
 
-  const createAnimal = animal => event => {
+  const createAnimal = animal => _event => {
     setAnimals([...animals, animal]);
   };
 
-  const deleteAnimal = index => event => {
+  const deleteAnimal = index => _event => {
     const animalsTemp = [...animals];
     animalsTemp.splice(index, 1);
     setAnimals(animalsTemp);
