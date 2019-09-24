@@ -5,9 +5,7 @@ import ShowAnimals from "./components/ShowAnimals";
 import Emojis from "./components/Emojis";
 
 function App() {
-  const defaultAnimals = ["Tiger", "Dog", "Cat"];
-
-  const [animals, setAnimals] = useState(defaultAnimals);
+  const [animals, setAnimals] = useState(["Tiger", "Dog", "Cat"]);
 
   // uses currying
   const createAnimal = animal => event => {
