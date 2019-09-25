@@ -13,6 +13,7 @@ function App() {
     console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };
 
+  // example calling curried function
   const _ignoreCallCurriedFunctionExample = () => {
     const someAnimal = "Snake";
     const someEvent = { clientX: "X", clientY: "Y" };
