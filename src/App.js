@@ -33,8 +33,9 @@ function App() {
       <NewAnimal createAnimal={createAnimal} />
       <ShowAnimals animals={animals} deleteAnimal={deleteAnimal} />
       <Emojis animals={animals} />
+
       {/* Example of lazy evaluation */}
-      {true && Array(1 / 0)}
+      {false && Array(1 / 0)}
     </div>
   );
 }
