@@ -35,7 +35,7 @@ function App() {
       <ShowAnimals animals={animals} deleteAnimal={deleteAnimal} />
       <Emojis animals={animals} />
 
-      {/* Example of lazy evaluation */}
+      {/* Example of short-circuit evaluation */}
       {false && Array(1 / 0)}
     </div>
   );

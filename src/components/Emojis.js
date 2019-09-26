@@ -3,7 +3,7 @@ import React from "react";
 const Emojis = props => {
   return (
     <h1>
-      {/* Lazy evaluation example*/}
+      {/* Short-circuit evaluation example*/}
       {props.animals.includes("Dog") && (
         <span role="img" aria-label="dog">
           🐶
