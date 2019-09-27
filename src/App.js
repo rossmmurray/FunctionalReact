@@ -9,7 +9,7 @@ function App() {
 
   // uses currying
   const createAnimal = animal => event => {
-    setAnimals([...animals, animal]);
+    setAnimals([...new Set([...animals, animal])]); // Set() ensures uniqueness
     console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };
 
