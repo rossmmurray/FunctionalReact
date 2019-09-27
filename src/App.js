@@ -21,9 +21,8 @@ function App() {
   };
 
   // uses multiple parameters
-  const deleteAnimal = (index, event) => {
-    const animalsTemp = [...animals];
-    animalsTemp.splice(index, 1);
+  const deleteAnimal = (animalToDelete, event) => {
+    const animalsTemp = animals.filter(animal => animal !== animalToDelete);
     setAnimals(animalsTemp);
     console.log("Mouse click at: " + event.clientX + ", " + event.clientY);
   };

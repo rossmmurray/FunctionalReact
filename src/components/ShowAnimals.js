@@ -3,10 +3,12 @@ import React from "react";
 const ShowAnimals = props => {
   return (
     <ul>
-      {props.animals.map((animal, index) => (
+      {props.animals.map(animal => (
         <li key={animal}>
           {animal}
-          <button onClick={event => props.deleteAnimal(index, event)}>X</button>
+          <button onClick={event => props.deleteAnimal(animal, event)}>
+            X
+          </button>
         </li>
       ))}
     </ul>

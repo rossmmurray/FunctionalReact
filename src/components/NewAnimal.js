@@ -15,6 +15,7 @@ const NewAnimal = props => {
       </label>
       {/* pass curried function */}
       <button onClick={props.createAnimal(newAnimal)}>Add</button>
+      <p>Note: only unique animals will be added.</p>
     </div>
   );
 };
